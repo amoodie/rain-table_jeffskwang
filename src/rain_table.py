@@ -136,13 +136,18 @@ transparency_list = np.linspace(0,255,9)
 y_hydro, x_hydro = np.unravel_index(AREA.argmax(), AREA.shape)
 
 #aerial photo
-aerial_surface = pygame.image.load(os.path.join(priv_path, 'aerial.png')).convert(24)
+from PIL import Image
+aerial_image = Image.open(os.path.join(priv_path, 'aerial.png'))
+aerial_array = np.array(aerial_image)
+aerial_array[:, :, 3] = (1 - (0.2 / 100)) * 255
+aerial_surface = pygame.surfarray.make_surface(aerial_array)
+# aerial_surface = pygame.image.load(os.path.join(priv_path, 'aerial.png')).convert(24)
 aerial_surface_scaled = pygame.transform.scale(aerial_surface,(int(res_width * scale),int(res_height * scale)))
 
 #contols
-controls_surface = pygame.image.load(os.path.join(priv_path, 'rain_table_controls.png'))
-controls_surface_scaled  = pygame.transform.scale(controls_surface,(int(res_height * scale * 0.5),int(res_height * scale * 0.5)))
-gameDisplay.blit(controls_surface_scaled,(res_width*scale - int(res_height*scale * 0.5),res_height*scale))
+# controls_surface = pygame.image.load(os.path.join(priv_path, 'rain_table_controls.png'))
+# controls_surface_scaled  = pygame.transform.scale(controls_surface,(int(res_height * scale * 0.5),int(res_height * scale * 0.5)))
+# gameDisplay.blit(controls_surface_scaled,(res_width*scale - int(res_height*scale * 0.5),res_height*scale))
 
 ############################
 ###ARRAYS###
