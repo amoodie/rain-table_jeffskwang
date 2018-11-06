@@ -11,12 +11,14 @@ requirements:
     - python
     - numpy >=1.11
     - matplotlib
+    - pillow
 
   run:
     - python
     - numpy >=1.11
     - scipy
     - matplotlib
+    - pillow
 
 test:
   # we don't run these tests during build (see --no-test on anaconda_build.sh)
