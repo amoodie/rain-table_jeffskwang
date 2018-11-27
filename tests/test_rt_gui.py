@@ -1,10 +1,15 @@
+print("importing: pytest and platform")
 import pytest
 import platform
 
+print("importing: sys and os")
 import sys, os
 sys.path.append(os.path.realpath(os.path.dirname(__file__)+"/.."))
 
+print("importing: numpy")
 import numpy as np
+
+print("importing: matplotlib")
 import matplotlib
 
 
@@ -12,6 +17,7 @@ import matplotlib
 @pytest.mark.mpl_image_compare(baseline_dir='figs_baseline', remove_text=True)
 def test_launch_fig():
 
+    print("in test_launch_fig, importing rain_table.rain_table.GUI")
     from rain_table.rain_table import GUI
 
 
