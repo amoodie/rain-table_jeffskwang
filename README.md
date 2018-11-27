@@ -3,7 +3,7 @@
 Interactive rain table model written by Jeffrey Kwang at UIUC, refactored for SedEdu by Andrew J Moodie.
 
 [![Build Status](https://travis-ci.org/sededu/rain_table.svg?branch=master)](https://travis-ci.org/sededu/rain_table) 
-[![Build status](https://ci.appveyor.com/api/projects/status/9twedak77iixanb7/branch/master?svg=true)](https://ci.appveyor.com/project/amoodie/rain_table/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/an6h6v8xsb4a2ghd/branch/master?svg=true)](https://ci.appveyor.com/project/amoodie/rain-table/branch/master)
 
 [![GitHub version](https://badge.fury.io/gh/sededu%2Frain_table.svg)](https://badge.fury.io/gh/sededu%2Frain_table)
 [![Anaconda-Server Badge](https://anaconda.org/sededu/rain_table/badges/version.svg)](https://anaconda.org/sededu/rain_table)
