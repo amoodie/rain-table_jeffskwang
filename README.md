@@ -1,6 +1,15 @@
 # rain_table
 
-Interactive rain table model written by Jeffrey Kwang at UIUC.
+Interactive rain table model written by Jeffrey Kwang at UIUC, refactored for SedEdu by Andrew J Moodie.
+
+[![Build Status](https://travis-ci.org/sededu/rain_table.svg?branch=master)](https://travis-ci.org/sededu/rain_table) 
+[![Build status](https://ci.appveyor.com/api/projects/status/9twedak77iixanb7/branch/master?svg=true)](https://ci.appveyor.com/project/amoodie/rain_table/branch/master)
+
+[![GitHub version](https://badge.fury.io/gh/sededu%2Frain_table.svg)](https://badge.fury.io/gh/sededu%2Frain_table)
+[![Anaconda-Server Badge](https://anaconda.org/sededu/rain_table/badges/version.svg)](https://anaconda.org/sededu/rain_table)
+[![PyPI version](https://badge.fury.io/py/rain_table.svg)](https://badge.fury.io/py/rain_table)
+<!-- [![Anaconda-Server Badge](https://anaconda.org/sededu/rain_table/badges/platforms.svg)](https://anaconda.org/sededu/rain_table) -->
+
 
 <img src="https://github.com/sededu/rain_table/blob/master/private/rain_table_demo.gif" alt="demo_gif">
 
@@ -88,6 +97,10 @@ __Note on permissions:__ you may need to use `sudo` on OSX and Linux.
 To install with `pip` from Pypi use (not recommended for entry-level users):
 ```
 pip3 install pyqt rain_table
+```
+or in the event of a failed install, try:
+```
+pip3 install pyqt5 sededu
 ```
 
 See below instructions for downloading the source code if you wish to be able to modify the source code for development or for exploration.
