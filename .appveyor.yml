@@ -42,6 +42,7 @@ os:
 
 init:
   - "ECHO %CONDA_INSTALL_LOCN% %CONDA_PY% %HOME% %PLATFORM%"
+  - "ECHO %PYTHON_VERSION%"
   - "ECHO %APPVEYOR_REPO_BRANCH%"
 
 install:
@@ -51,7 +52,7 @@ install:
   - cmd: conda info
   - cmd: conda config --set always_yes yes --set anaconda_upload no
   - cmd: conda update -q conda
-  - cmd: conda create -q -n test-environment python=%PYTHON_VERSION%
+  - cmd: conda create -q -n test-environment python=%CONDA_PY%
   - cmd: activate test-environment
   - cmd: conda install -q numpy scipy matplotlib pytest pillow
   # - cmd: pip install Pillow
