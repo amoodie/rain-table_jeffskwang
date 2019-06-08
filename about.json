@@ -10,6 +10,6 @@
     "exec": ["run_rain_table.py"],
     "docloc": ["doc"],
     "doclist": {
-    	"empty.txt": "A blank textfile"
+    	"introduction.pdf": "A brief introduction"
     }
 }
