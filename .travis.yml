@@ -48,7 +48,7 @@ install:
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION numpy scipy matplotlib pillow pytest=3.8.1 pyqt pytest-mpl
   - source activate test-environment
   # - conda install -q numpy scipy matplotlib pillow pytest pyqt
-  - conda install -q -c conda-forge pytest-mpl
+  # - conda install -q -c conda-forge pytest-mpl
   - hash -r
 
 before_script:
